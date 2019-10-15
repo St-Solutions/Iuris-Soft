@@ -21,6 +21,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('iuris_admin.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('ckeditor',include('ckeditor_uploader.urls')),
     #url(r'control/',include('control_panel.urls')),
     url(r'contacts/',include('contactsmanagement.urls')),
+    path('ckeditor',include('ckeditor_uploader.urls')),
 ]
